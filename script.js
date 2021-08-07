@@ -49,47 +49,64 @@
 // console.log(book);
 
 
-var fruits ={
-    mango: 'yellow',
-    guava: 'green',
-    banana: 'yellow',
-    grapes: {
-        type1: 'ripe',
-        type2: 'unripe',
-        type3:'wine material'
-    }
-}
+// var fruits ={
+//     mango: 'yellow',
+//     guava: 'green',
+//     banana: 'yellow',
+//     grapes: {
+//         type1: 'ripe',
+//         type2: 'unripe',
+//         type3:'wine material'
+//     }
+// }
 
-console.log(fruits);
-console.log(fruits.mango);
-console.log(fruits['guava']);
+// console.log(fruits);
+// console.log(fruits.mango);
+// console.log(fruits['guava']);
 
-// addition of a key value pair
-fruits.strawberry='red';
-console.log(fruits);
+// // addition of a key value pair
+// fruits.strawberry='red';
+// console.log(fruits);
 
 
-// using dot notation and bracket notation
-console.log(fruits.grapes.type3);
-console.log(fruits['grapes']['type2']);
+// // using dot notation and bracket notation
+// console.log(fruits.grapes.type3);
+// console.log(fruits['grapes']['type2']);
 
-// assigning object to different object
-var fruits2= fruits ;
+// // assigning object to different object
+// var fruits2= fruits ;
 
-// adding a key value pair
-fruits2.apple='red';
-console.log(fruits);
-console.log(fruits2);
+// // adding a key value pair
+// fruits2.apple='red';
+// console.log(fruits);
+// console.log(fruits2);
 
-// using function inside an object called method
+// // using function inside an object called method
 
-var video = {
-    name: 'access101 JS Tutorial',
-    play : function () {
-        console.log('Video Played')
-    },
-    timer: [0, 30, 70]
-}
-console.log(video.timer);
-video.play();
+// var video = {
+//     name: 'access101 JS Tutorial',
+//     play : function () {
+//         console.log('Video Played')
+//     },
+//     timer: [0, 30, 70]
+// }
+// console.log(video.timer);
+// video.play();
+// console.log(video.play());
+// a=video.play();
+// console.log(a);
  
+
+
+var subjects = {
+    maths:'algebra',
+    computerscience:'data structures',
+    biology:["origin of species","genetics", "anatomy","opthalmology","community medicine", "surgery"],
+    english:'literature'
+
+}
+var book=subjects.biology.length;
+console.log(book);
+for(i=0;i<=book;i++){
+    console.log(subjects.biology[2]);
+}
