@@ -91,4 +91,5 @@ var video = {
     timer: [0, 30, 70]
 }
 console.log(video.timer);
+video.play();
  
